@@ -63,6 +63,15 @@ createApp({
 
     methods: {
         processMailFailure(result) {
+            //Should look like this...
+            /*if(this.form.firstname.length == 0){
+            this.$refs.firstname.classList.add("error");
+            this.errorName = true;
+            } else {
+            this.$refs.firstname.classList.remove("error");
+            this.errorName = false;
+            }*/
+            //You have this backwards...
             if(this.form.firstname.length == 0){
             this.$refs.firstname.classList.remove("error");
             this.errorName = false;
